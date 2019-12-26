@@ -1,0 +1,27 @@
+<!-- <div *ngIf="selectedHero"> Defining selectedHero and binding it with selectedHero in class
+    <h2>{{selectedHero.name | uppercase}} Details</h2>
+    <div><span>ID: </span>{{selectedHero.id}}</div>
+    <div>
+        <label>Name:
+            <input [(ngModel)]="selectedHero.name" placeholder="name" />
+        </label><br>
+        <label>Power:
+            <input [(ngModel)]="selectedHero.power" placeholder="power" />
+        </label>
+    </div>
+</div> -->
+
+<div *ngIf="herodetails">
+
+    <h2>{{herodetails.name | uppercase}} Details</h2>
+    <div><span>ID: </span>{{herodetails.id}}</div>
+    <div>
+        <label>Name:
+            <input [(ngModel)]="herodetails.name" placeholder="name" />
+        </label><br>
+        <label>Power:
+            <input [(ngModel)]="herodetails.power" placeholder="power" />
+        </label>
+    </div>
+
+</div>
